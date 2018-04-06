@@ -1,9 +1,12 @@
 var currentIndex = 0;
-var time = 120;
+var time = 30;
+var interval;
 
 $('#start').on("click", (e) => {
 	// Display the question
 	displayNextQuestion();
+	// Start the timer
+	$('#start').on('click', startTimer);
 
 	// Unhide choice buttons
 	$('#choicea').removeClass('d-none');
@@ -12,12 +15,39 @@ $('#start').on("click", (e) => {
 
 	// Hide start btn so people can't keep clicking it
 	$('#start').addClass('d-none');
+	startTimer();
 
 });
+
+//Animate title on page load
+$(document).ready(function() {
+	$('#title').addClass('animated jello');
+});
+
+//Timer Function
+var tick = function(){
+	time -= 1;
+	console.log(time);
+	$("#stopwatch").html(time);
+	if(time <= 0){
+		clearInterval(interval);
+		alert('GAME OVER!');
+		$('#again').removeClass('d-none');
+	}else if(currentIndex === locations.length){
+		alert("YOU MADE IT! Have a safe flight home");
+		clearInterval(interval);
+	}
+}
+var startTimer = function() {
+
+	//set the interval in motion
+	interval = setInterval(tick, 1000);
+};
 //Unhide instructions when user clicks "Instructions"
 
 $('#gameinfo').on("click", (e) => {
 	$('#instructions').removeClass('d-none');
+	$('#instructions').addClass('animated zoomInUp')
 });
 
 $('#choicea').click(function(e){
@@ -25,9 +55,11 @@ $('#choicea').click(function(e){
 	//todo: something regard right/wrong answer
 	if(locations[currentIndex].questions[0].answer === "a"){
 		alert('Correcto!')
+		time += 5
 	}
 	else {
 		alert('Incorrecto')
+		time -= 10;
 	}
 	currentIndex++;
 	displayNextQuestion();
@@ -38,9 +70,12 @@ $('#choiceb').click(function(e){
 	//todo: something regard right/wrong answer
 	if(locations[currentIndex].questions[0].answer === "b"){
 		alert('Correcto!')
+		time += 5;
 	}
 	else {
 		alert('Incorrecto')
+		time -= 10;
+
 	}
 	currentIndex++;
 	displayNextQuestion();
@@ -50,10 +85,12 @@ $('#choicec').click(function(e){
 	console.log('user chose C');
 	//todo: something regard right/wrong answer
 	if(locations[currentIndex].questions[0].answer === "c"){
-		console.log('Correcto!')
+		alert('Correcto!')
+		time += 5;
 	}
 	else {
-		console.log('Incorrecto!')
+		alert('Incorrecto')
+		time -= 10;
 	}
 
 	currentIndex++;
@@ -63,11 +100,11 @@ $('#choicec').click(function(e){
 function displayNextQuestion(){
 	if(currentIndex >= locations.length || time <= 0){
 		// TODO: Show score?
-		console.log('END OF GAME!');
-	}
+	$('#again').removeClass('d-none');//Display Play Again button
+}
 	else {
 		// Display welcome text 
-		$('#welcome-text').text('Welcome to ' + locations[currentIndex].country + "!");
+		$('#welcome-text').text('Bienvenido a ' + locations[currentIndex].country + "!");
 		
 		// Assign question text
 		$('#question').text(locations[currentIndex].questions[0].text);
@@ -78,6 +115,8 @@ function displayNextQuestion(){
 		$('#choicec').text(locations[currentIndex].questions[0].choices.c);
 	}
 }
+
+
 
 
 

@@ -7,9 +7,9 @@ const locations = [
 			{
 				text: "After a long, turbulent flight, you have finally landed in Brazil! You're feeling tired and need to find a place to rest for the night. How would you ask for the nearest hotel?",
 				choices: {
-					a: "¿Dónde está el hotel más cercano?",
-					b: "¿Dónde está el aeropuerto?",
-					c: "¿Me puedes ayudar?"
+					"a": "¿Dónde está el hotel más cercano?",
+					"b": "¿Dónde está el aeropuerto?",
+					"c": "¿Me puedes ayudar?"
 				},
 				answer: "a"
 			}
@@ -27,7 +27,7 @@ const locations = [
 					"b": "la piscina",
 					"c": "el coche"
 				},
-				answer: "a"
+				answer: "c"
 			}
 		]	
 	},
@@ -37,7 +37,7 @@ const locations = [
 		y: 0,
 		questions: [
 			{
-				text: "Bienvenido a Bogotá, Colombia! You pulled an all nighter and never got to stop for a bathroom break. How do you find one?",
+				text: "You have arrived in Bogotá, Colombia! You pulled an all nighter and never got to stop for a bathroom break. How do you find one?",
 				choices: {
 					"a": "¿Dónde está la biblioteca?",
 					"b": "¿dónde está el baño?",
@@ -69,11 +69,11 @@ const locations = [
 		y: 0,
 		questions: [
 		{
-			text: "A warm welcome from Lima, Perú! You want to hike Machu Picchu while you're here, but need a tour guide to take you. First, they need to know where you are going. What is the word for mountain?",
+			text: "A warm welcome from Lima, Perú! You want to hike Machu Picchu while you're here, but need to by some hiking boots and a bottle of water first! Do you know the vocab?",
 			choices: {
-				"a": "La montaña",
-				"b": "El montaña",
-				"c": "el gato"
+				"a": "Botas de senderismo y una botella de agua",
+				"b": "Zapatos de agua",
+				"c": "zapatos y agua"
 				},
 				answer: "a"
 
