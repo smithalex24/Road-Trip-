@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Road Trip</title>
+
+<meta name="viewport" content="width=device-width">	
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id = "container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Road Trip Race!</h1>
+				<h2 id="small-h2">An interactive Spanish language learning game for beginners</h2>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-4">
+				<button id = "gameinfo">Instructions</button>
+					<div class = "d-none" id = "instructions">¡Vas de vacaciones a Sudamérica! Pruebe sus habilidades en Español resolviendo preguntas y frases de vocabulario para ayudarle a viajar al siguiente país. Hacer de nuevo a Brasil antes de sus vacaciones ha terminado!</div>
+					<br>
+				<button id = "start">Start</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div id="question-container" class="col-8">
+				<div class="row">
+					<div class="col-12">
+						<h2 id="welcome-text" class="text-center margin-20"></h2>
+					</div>
+				</div>
+		
+				<div id = "question" class="margin-20"></div>
+
+				<div id="dialogueBox" class="margin-20">
+					<div class="row">
+						<div class="col-12 col-sm-4"><button id="choicea" class="btn btn-warning d-none"></button></div>
+						<div class="col-12 col-sm-4"><button id="choiceb" class="btn btn-warning d-none"></button></div>
+						<div class="col-12 col-sm-4"><button id="choicec" class="btn btn-warning d-none"></button></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="app2.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
