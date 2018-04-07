@@ -2,6 +2,13 @@ var currentIndex = 0;
 var time = 30;
 var interval;
 
+//Animate Title on window load
+$(document).ready(function(){
+  $("#title").addClass('animated bounceInUp', 1000);
+  $("#")
+  
+});
+
 $('#start').on("click", (e) => {
 	// Display the question
 	displayNextQuestion();
@@ -19,10 +26,6 @@ $('#start').on("click", (e) => {
 
 });
 
-//Animate title on page load
-$(document).ready(function() {
-	$('#title').addClass('animated jello');
-});
 
 //Timer Ongoing Function
 var tick = function(){
