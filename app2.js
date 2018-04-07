@@ -24,7 +24,7 @@ $(document).ready(function() {
 	$('#title').addClass('animated jello');
 });
 
-//Timer Function
+//Timer Ongoing Function
 var tick = function(){
 	time -= 1;
 	console.log(time);
