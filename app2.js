@@ -5,7 +5,7 @@ var interval;
 //Animate Title on window load
 $(document).ready(function(){
   $("#title").addClass('animated bounceInUp', 1000);
-  $("#")
+ 
   
 });
 
@@ -36,6 +36,7 @@ var tick = function(){
 		clearInterval(interval);
 		alert('GAME OVER!');
 		$('#again').removeClass('d-none');
+		$('#home').removeClass('d-none');
 	}else if(currentIndex === locations.length){
 		alert("YOU MADE IT! Have a safe flight home");
 		clearInterval(interval);
@@ -101,11 +102,10 @@ $('#choicec').click(function(e){
 });
 
 function displayNextQuestion(){
-	if(currentIndex >= locations.length || time <= 0){
-		// TODO: Show score?
-	$('#again').removeClass('d-none');//Display Play Again button
-}
-	else {
+	if(currentIndex >= locations.length || time === 0){
+		console.log('you ran out of time');
+		$('#again').removeClass('d-none');//Display Play Again button
+	} else {
 		// Display welcome text 
 		$('#welcome-text').text('Bienvenido a ' + locations[currentIndex].country + "!");
 		

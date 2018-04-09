@@ -25,7 +25,7 @@ const locations = [
 				choices: {
 					"a": "Quiero un coche y casa",
 					"b": "Me encanta un libro y cafe",
-					"c": "Me gustaría una cerveza y una hamburguesa con patatas fritas"
+					"c": "Me gustaría una cerveza y una hamburguesa"
 				},
 				answer: "c"
 			}
@@ -135,11 +135,11 @@ const locations = [
 		y: 0,
 		questions: [
 			{
-				text: "You have arrived in Asunción, Paraguay. A friend recommended checking out the National Pantheon of the Heroes museum, but you don't know how much it costs. Lets ask the tour guide!",
+				text: "Has llegado a Asunción, Paraguay. ¿Cuál es el apodo de este país?",
 				choices: {
-					"a": "Muchas Gracias",
-					"b": "¿Qué es esto?",
-					"c": "¿Cuánto cuesta?"
+					"a": "El país del fútbol",
+					"b": "¿El país de la poesía",
+					"c": "Corazón de América"
 				},
 				answer: "c"
 			}
@@ -151,11 +151,11 @@ const locations = [
 		y: 0,
 		questions: [
 			{
-				text: "The race is almost over! It's been an exhausting trip, but you want to explore La Paz, Bolivia. You don't know much about the country, and want to get recommendations. How would you ask?",
+				text: "La carrera está a punto de acabarse! Ha sido un viaje agotador, ¡todavía quieres explorar! Usted ha oído que Bolivia es el hogar del mayor piso de sal del mundo. ¿Cómo se llama?",
 				choices: {
-					"a": "¿Qué hay que hacer aquí?",
-					"b": "¿Cuál es tu número de teléfono?",
-					"c": "¿Cuál es tu película favorita?"
+					"a": "Salar de Uyuni",
+					"b": "Palacio de Sal",
+					"c": "La Sal Del Mundo"
 				},
 				answer: "a"
 			}
