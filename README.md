@@ -25,7 +25,7 @@ The race takes place in South America, and the goal is to make it to each countr
 * Deploy your game online, where the rest of the world can access it
 * Use semantic markup for HTML (adhere to best practices)
 
-### Techonologies Used
+### Technologies Used
 
 1. HTML5
 2. CSS
@@ -36,5 +36,28 @@ The race takes place in South America, and the goal is to make it to each countr
 ### Approach Taken
 
 1. Game Type/Theme
-    * 
+    * Race around South America by answering Spanish vocabulary/trivia questions before time is up
+    * Multiple choice - 3 answers to choose from 
+2. Format/Organization
+    * Created a Jquery array of objects called "Locations"
+    * Created an empty variable called "currentLocation" 
+    * Created a "time" variable with the starting time.
+    * Objects include: country, a question, 3 choices and a correct answer.
+3. Game Win 
+    * Game is won if the user can make it through the last question before the timer runs out.
+    * Alert is shown at the end
+4. Game Lose 
+    * Game is lost if the user runs out of time and doesn't make it through the last question.
+    * Alert is shown at the end
 
+## Challenges 
+
+1. CSS/Styling - Positioning my buttons the way I wanted them to
+2. Finding images I could legally use
+3. Making the timer stop counting down after it hits 0
+
+## Future Revisions
+
+My original idea was to have the entire "game board" be the outline of South America with a pin that moved around the board according to the question("country") it was on. 
+However, I wasn't able to find a good enough sized map to do this and had a difficult time trying to understand and find the x and y coordinates of each country. Because of this, I decided to simplify a bit and make the game playable. 
+I would like to revise this in the future with more time and add the moving pin to the map!
