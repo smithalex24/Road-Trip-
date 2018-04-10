@@ -10,7 +10,6 @@ The race takes place in South America, and the goal is to make it to each countr
 
 **Careful!** For each question answer incorrectly, 10 seconds will be deducted from your timer. Luckily, for every right answer, 5 seconds will be added.
 
-## Wireframes
 <img width="833" alt="screen shot 2018-04-10 at 10 34 03 am" src="https://user-images.githubusercontent.com/36453286/38573970-7107873c-3cac-11e8-9e3b-9dca06cf9cb6.png">
 
 
