@@ -1,6 +1,6 @@
 # Road-Trip-Race
 
-### [**Live Game**]("https://smithalex24.github.io/Road-Trip-Race/")
+### [**Live Game Demo **](https://smithalex24.github.io/Road-Trip-Race/)<br>
 
 *Road Trip Race* is an authentic, single-player fast paced Spanish language learning game that is geared for both beginners and intermediate-advanced users.
 
