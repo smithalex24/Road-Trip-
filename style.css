@@ -62,7 +62,7 @@ img {
 	width: 90px;
 	height: 80px;
 	border-radius: 30px;
-	border: 8px solid #d09cd9;
+	border: 8px solid #FFFF99;
 	background: none;
 	font-weight: bold;
 	font-family: 'Acme', sans-serif;
@@ -87,7 +87,7 @@ img {
 	border-radius: 15px;
 	height: 60px;
 	width: 200px;
-	border: 8px solid #FFFF99;
+	border: 8px solid #1E90FF;
 	background: white;
 	font-weight: bold;
 	font-size: 30px;
@@ -102,7 +102,7 @@ img {
 	border-radius: 20px;
 	height: 80px;
 	width: 200px;
-	border: 8px solid #ffa07a;
+	border: 8px solid #FF8C00;
 	background: none;
 	font-weight: bold;
 	font-family: 'Acme', sans-serif;
@@ -113,7 +113,7 @@ img {
 	border-radius: 20px;
 	height: 80px;
 	width: 200px;
-	border: 8px solid #ffa07a;
+	border: 8px solid #FF8C00;
 	background: none;
 	font-weight: bold;
 	font-family: 'Acme', sans-serif;
@@ -145,7 +145,7 @@ iframe {
 }
 #instructions {
 	font-weight: bold;
-	border: 8px solid #0198E1;
+	border: 8px solid 	#FF8C00;
 	border-radius: 10px;
 	color: black;
 	text-align: center;
@@ -159,7 +159,7 @@ iframe {
 }
 #begin {
 	font-weight: bold;
-	border: 8px solid #FFFF99;
+	border: 8px solid #1E90FF;
 	border-radius: 10px;
 	color: black;
 	text-align: center;

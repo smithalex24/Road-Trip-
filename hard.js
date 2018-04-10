@@ -88,9 +88,9 @@ const locations = [
 			{
 				text: "Después de una extenuante caminata en Perú, lo has hecho a Santiago, Chile y estás listo para relajarte bajo el sol! Usted lee que la piscina más grande del mundo está en el Hotel San Alfonso del mar. ¿Qué tan grande es la piscina?",
 				choices: {
-					"a": "Está sobre 3.323 pies en longitud con un área de cerca de 20 acres",
-					"b": "Está sobre 8.300 pies en longitud con un área de cerca de 80 acres",
-					"c": "Está sobre 5.655 pies en longitud con un área de cerca de 30 acres"
+					"a": "3.323 pies en longitud y un área de cerca de 20 acres",
+					"b": "8.300 pies en longitud y un área de cerca de 80 acres",
+					"c": "5.655 pies en longitud y un área de cerca de 30 acres"
 				},
 				answer: "a"
 			}

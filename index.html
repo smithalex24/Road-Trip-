@@ -1,54 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-	<title>Road Trip</title>
-
-<meta name="viewport" content="width=device-width">	
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-<link href="https://fonts.googleapis.com/css?family=Anton|Cabin" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Road Trip Race</title>
 </head>
-<body>
+<body id = "body2">
 	<div id = "container">
-			<button id = "start">Comenzar Aquí</button>
-				<br>
-				<button id = "again" class= "d-none"><a href="file:///Users/alexsmith/Project1/index.html" class="btn btn-default">Play Again</a></button>
-			</div>
-		<div id="stopwatch">30</div>
-		<br>
-		<br>
-		<br>
 		<div class="row">
-			<div id="question-container" class="col-9">
-				<div class="row">
-					<div class="col-12">
-						<h2 id="welcome-text" class="text-center margin-20"></h2>
-					</div>
-				</div>
-		
-				<div id = "question" class="margin-20"></div>
-				<!-- <img src = "Red-Pin.png"> -->
-
-				<div id="dialogueBox" class="margin-20">
-					<div class="row">
-						<div class="col-12 col-sm-4"><button id="choicea" class="btn btn-warning d-none"></button></div>
-						<div class="col-12 col-sm-4"><button id="choiceb" class="btn btn-warning d-none"></button></div>
-						<div class="col-12 col-sm-4"><button id="choicec" class="btn btn-warning d-none"></button></div>
-					</div>
-				</div>
-
+			<div class="col-12">
+				<h1 id = "title">Road Trip Race!</h1>
+				<h2 id="small-h2">An interactive Spanish language learning game for all skill levels</h2>
 			</div>
 		</div>
+			<div class="row">
+				<div class="col-4">
+					<button id = "gameinfo">Instructions</button>
+					<br>
+					<br>
+					<br>
+					<div class = "d-none" id = "instructions">¡Vas de vacaciones a Sudamérica! 
+					<br>Test your Spanish language skills by solving vocabulary questions and phrases to help you move on to the next country.
+					<br>
+					For every wrong answer, 10 seconds will be deducted from your timer. 
+					<br>
+					For every right answer, 5 seconds will be added on to your timer. Return to Brazil before your vacation time is over!</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class = "row">
+				<div class = "col-4">
+					<a id = "begin" href="file:///Users/alexsmith/Project1/easy.html" class="btn btn-default">Fácil</a>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-4">
+					<a id = "begin" href="file:///Users/alexsmith/Project1/hard.html" class="btn btn-default">Difícil</a>
+				</div>
+			</div>
 
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/r0DRat-Ytng?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-	</div>
 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/GqCXG9a2qi8?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="hard.js"></script>
 	<script src="app2.js"></script>
-	<script src="app.js"></script>
+	<script src="easy.js"></script>
+	
 </body>
 </html>

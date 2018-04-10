@@ -1,5 +1,5 @@
 var currentIndex = 0;
-var time = 30;
+var time = 100;
 var interval;
 
 //Animate Title on window load
@@ -32,14 +32,15 @@ var tick = function(){
 	time -= 1;
 	console.log(time);
 	$("#stopwatch").html(time);
-	if(time <= 0){
+	if(time === 0){
 		clearInterval(interval);
 		alert('GAME OVER!');
 		$('#again').removeClass('d-none');
 		$('#home').removeClass('d-none');
 	}else if(currentIndex === locations.length){
-		alert("YOU MADE IT! Have a safe flight home");
 		clearInterval(interval);
+		alert("YOU MADE IT! Have a safe flight home");
+		$('#home').removeClass('d-none');
 	}
 }
 var startTimer = function() {
