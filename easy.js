@@ -5,11 +5,11 @@ const locations = [
 		y: 0,
 		questions: [
 			{
-				text: "After a long, turbulent flight, you have finally landed in Brazil! You're feeling tired and need to find a place to rest for the night. How would you ask for the nearest hotel?",
+				text: "After a long, turbulent flight, you have finally landed in Brazil! You're feeling tired and need to find a place to rest for the night. How would you ask for the nearest hotel? (Hint: they speak Portuguese here!)",
 				choices: {
-					"a": "¿Dónde está el hotel más cercano?",
+					"a": "¿Onde fica o hotel mais próximo?",
 					"b": "¿Dónde está el aeropuerto?",
-					"c": "¿Me puedes ayudar?"
+					"c": "¿Dónde está el hotel mas cercano?"
 				},
 				answer: "a"
 			}
