@@ -32,7 +32,8 @@ var tick = function(){
 	time -= 1;
 	console.log(time);
 	$("#stopwatch").html(time);
-	if(time === 0){
+	if(time <= 0){
+    $("#stopwatch").html("0");
 		clearInterval(interval);
 		alert('GAME OVER!');
 		$('#again').removeClass('d-none');
@@ -103,7 +104,7 @@ $('#choicec').click(function(e){
 });
 
 function displayNextQuestion(){
-	if(currentIndex >= locations.length || time === 0){
+	if(currentIndex >= locations.length || time <= 0){
 		console.log('you ran out of time');
 		$('#again').removeClass('d-none');//Display Play Again button
 	} else {
